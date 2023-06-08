@@ -3,8 +3,8 @@ class BuyProduct {
         cy.visit(url)
     }
 
-    searchProduct(product) {
-        const productelm = cy.get(product)
+    searchProduct(searchBox) {
+        const productelm = cy.get(searchBox)
         productelm.click()
         productelm.type('dress{enter}')
 
